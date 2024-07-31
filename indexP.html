@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="player category">
+            <button class="clickCategory" data="Classic">Classic</button>
+            <button class="clickCategory" data="Jazz">Jazz</button>
+            <button class="clickCategory" data="Rabis">Rabis</button>
+            <button class="clickCategory" data="Rap">Rap</button>
+            <button class="clickCategory" data="Rock">Rock</button>
+        </div>
+        <div class="player audioplayer">
+            <div class="overflow">
+                <audio src="" id="audio"></audio>
+                <div class="title">
+                    <h2 class="nameSong">dvgsfd</h2>
+                    <h3 class="nameSinger">fvdxfv</h3>
+                    <h4 class="nameCategory">efwe</h4>
+                </div>
+                <div class="cont-time">
+                    <p class="song-time">00:00</p>
+                    <input type="range" class="song-range" value="0" max="100">
+                    <p class="song-duration">00:00</p>
+                </div>
+                <img src="images/indila.jpg" alt="" class="img-singer">
+                <div class="menu-bar">
+                    <i class="fa fa-undo undoSecond"></i>
+                    <i class="fa fa-backward prev"></i>
+                    <i class="fa fa-play play-pause"></i>
+                    <i class="fa fa-forward next"></i>
+                    <i class="fa fa-repeat undoFirst"></i>
+                </div>
+                <div class="speeds">
+                    <button class="buttonsSpeed"><span class="speed">0.25</span>x</button>
+                    <button class="buttonsSpeed"><span class="speed">0.5</span>x</button>
+                    <button class="buttonsSpeed"><span class="speed">1</span>x</button>
+                    <button class="buttonsSpeed"><span class="speed">1.5</span>x</button>
+                    <button class="buttonsSpeed"><span class="speed">2</span>x</button>
+                </div>
+                <div class="down">
+                    <div class="cont-volume">
+                        <i class="fa fa-volume-up"></i>
+                        <input type="range" class="audio-volume" value="50" max="100">
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="repeat">
+                        <button class="startRepeat">A</button>
+                        <button class="endRepeat">B</button>
+                        <button class="offRepeat">Off</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player songs">
+            <!-- <div>
+                <img src="images/bethowen.jpg" alt="">
+                <h2>Bethowen</h2>
+                <h3>Moonlight Sonata</h3>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/dc2f3c8121.js" crossorigin="anonymous"></script>
+    <script src="scriptP.js"></script>
+</body>
+
+</html>

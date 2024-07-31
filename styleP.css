@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(128, 174, 203);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+}
+
+.player {
+    border: 1px double black;
+}
+
+.audioplayer {
+    background: url(images/indila.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overflow {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h2 {
+    color: rgb(12, 12, 48);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.title h3 {
+    color: rgb(12, 12, 48);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.title h2 {
+    color: rgb(12, 12, 48);
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.cont-time {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cont-time p {
+    color: transparent;
+    font-size: 50px;
+    background: linear-gradient(deepskyblue, cyan, teal, cyan, deepskyblue);
+    -webkit-background-clip: text;
+}
+
+.song-range {
+    appearance: none;
+    width: 200px;
+    height: 4px;
+    background: teal;
+}
+
+.song-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 8px;
+    height: 15px;
+    background: teal;
+    cursor: pointer;
+    box-shadow: 0 0 7px white inset;
+}
+
+.img-singer {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-bar i {
+    font-size: 30px;
+    color: teal;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.menu-bar i:hover {
+    text-shadow: 2px 2px white;
+}
+
+.speeds {
+    width: 100%;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonsSpeed {
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: teal;
+    font-size: 20px;
+    box-shadow: 0 0 10px white inset;
+    transition: .5s;
+}
+
+.down {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-volume {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.cont-volume i {
+    color: teal;
+    font-size: 25px;
+}
+
+.audio-volume {
+    appearance: none;
+    width: 150px;
+    height: 4px;
+    background: teal;
+}
+
+.audio-volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 7px;
+    height: 15px;
+    background: teal;
+    cursor: pointer;
+    box-shadow: 0 0 7px white inset;
+}
+
+.percent {
+    color: white;
+}
+
+.repeat {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.repeat button {
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: teal;
+    box-shadow: 0 0 10px white inset;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px;
+}
+
+.clickCategory {
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 0 10px 5px white inset;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    border: none;
+}
+
+.songs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px;
+    overflow: auto;
+}
+
+.songs div {
+    width: 95%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px white inset;
+    border-radius: 20px;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.songs img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.songs h2,.songs h3 {
+    color: white;
+}
